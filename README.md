@@ -5,11 +5,9 @@ In Node.js, an event emitter provides a mechanism for emitting and listening to 
 In this challenge, we have incomplete operations for the calculator. Your task is to complete the missing operations of the calculator, such as `subtraction`, `multiplication`, `division`, and `exponential`.
 
 ## Steps
-1. Build a Node.js calculator using event emitters for operation selection.
-2. Support `subtraction`, `multiplication`, `division`, and `exponential`.
-3. Write unit tests for calculator functions using Mocha and Chai.
-4. Implement a transform stream to multiply test results by 2.
-5. Write the transformed results to an `output.txt` file.
+1. Support `subtraction`, `multiplication`, `division`, and `exponential` operators on `calculator.js` module.
+2. Write unit tests for each operators on `calculator.spec.js` and a unit test for combinations of operators.
+3. Run `npm test` to check your unit tests
 
 ## How to Submit
 1. Fork this [repository](https://github.com/arifintahu/msib-challenge-week-7)
