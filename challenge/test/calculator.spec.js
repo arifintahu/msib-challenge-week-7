@@ -16,7 +16,7 @@ describe("Challenge: Calculator Event Driven", () => {
             expect(spy.args[0][0].result).to.be.eq(10);
         })
 
-        it("should return 13", () =>{
+        it("should return 13", () => {
             spy.resetHistory();
             calculator.once("calculationResult", spy);
             calculator.add(3);
@@ -25,7 +25,7 @@ describe("Challenge: Calculator Event Driven", () => {
             expect(spy.args[0][0].result).to.be.eq(13);
         })
 
-        it("should return 14 and 16", () =>{
+        it("should return 14 and 16", () => {
             spy.resetHistory();
             calculator.on("calculationResult", spy);
             calculator.add(1);
