@@ -6,7 +6,7 @@ In this challenge, we have incomplete operations for the calculator. Your task i
 
 ## Steps
 1. Support `subtraction`, `multiplication`, `division`, and `exponential` operators on `calculator.js` module.
-2. Write unit tests for each operators on `calculator.spec.js` and a unit test for combinations of operators.
+2. Write unit tests for each operators on `calculator.spec.js` and unit tests for combinations of operators.
 3. Run `npm test` to check your unit tests
 
 ## How to Submit
