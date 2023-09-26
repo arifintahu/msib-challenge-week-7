@@ -1,6 +1,6 @@
 # Challenge Week 7 - Event-Driven Calculator
 
-In Node.js, an event emitter provides a mechanism for emitting and listening to custom events in a Node.js application. Event emitters are at the core of event-driven programming in Node.js, enabling you to build applications that respond to events asynchronously.
+An event emitter provides a mechanism for emitting and listening to custom events in a Node.js application. Event emitters are at the core of event-driven programming in Node.js, enabling you to build applications that respond to events asynchronously.
 
 In this challenge, we have incomplete operations for the calculator. Your task is to complete the missing operations of the calculator, such as `subtraction`, `multiplication`, `division`, and `exponential`.
 
