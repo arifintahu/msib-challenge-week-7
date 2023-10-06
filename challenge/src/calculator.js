@@ -1,65 +1,29 @@
-const { EventEmitter } = require("events");
+const { EventEmitter } = require('events')
 
 class CalculatorEvent extends EventEmitter {
-  constructor(initialValue = 0) {
-    super();
-    this.currentValue = initialValue;
-  }
+    constructor(initialValue = 0) {
+        super();
+        this.currentValue = initialValue;
+    }
 
-  add(number) {
-    const result = this.currentValue + number;
-    this.emit("calculationResult", {
-      operator: "add",
-      operandLeft: this.currentValue,
-      operandRight: number,
-      result: result,
-    });
-    this.currentValue = result;
-  }
+    add(number) {
+        const result = this.currentValue + number;
+        this.emit("calculationResult", {
+            operator: "add",
+            operandLeft: this.currentValue,
+            operandRight: number,
+            result: result,
+        });
+        this.currentValue = result;
+    }
 
-  substract(number) {
-    const result = this.currentValue - number;
-    this.emit("calculationResult", {
-      operator: "substract",
-      operandLeft: this.currentValue,
-      operandRight: number,
-      result: result,
-    });
-    this.currentValue = result;
-  }
+    substract(number) {}
 
-  multiply(number) {
-    const result = this.currentValue * number;
-    this.emit("calculationResult", {
-      operator: "multiply",
-      operandLeft: this.currentValue,
-      operandRight: number,
-      result: result,
-    });
-    this.currentValue = result;
-  }
+    multiply(number) {}
 
-  divide(number) {
-    const result = this.currentValue / number;
-    this.emit("calculationResult", {
-      operator: "divide",
-      operandLeft: this.currentValue,
-      operandRight: number,
-      result: result,
-    });
-    this.currentValue = result;
-  }
-
-  exponent(number) {
-    const result = this.currentValue ** number;
-    this.emit("calculationResult", {
-      operator: "exponent",
-      operandLeft: this.currentValue,
-      operandRight: number,
-      result: result,
-    });
-    this.currentValue = result;
-  }
+    divide(number) {}
+    
+    exponent(number) {}
 }
 
 module.exports = CalculatorEvent;
